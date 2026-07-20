@@ -1,10 +1,10 @@
 Package: shinyjs
 Title: Easily Improve the User Experience of Your Shiny Apps in Seconds
-Version: 2.1.0.9012
+Version: 2.1.1
 Authors@R: c(
     person("Dean", "Attali", , "daattali@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-5645-3493")),
-    person(, "Bryce", role = "ctb",
+    person("Bryce", "Carson", role = "ctb",
            comment = c("Customizations to shinyjs for CougarStats", ORCID = "0000-0002-1362-2998"))
   )
 Description: Perform common useful JavaScript operations in Shiny apps
@@ -15,7 +15,7 @@ Description: Perform common useful JavaScript operations in Shiny apps
     and the developer. 'shinyjs' can also be used to easily call your own
     custom JavaScript functions from R.
 License: MIT + file LICENSE
-URL: https://deanattali.com/shinyjs/, https://github.com/daattali/shinyjs
+URL: https://github.com/krishnamurthylab/shinyjs/
 BugReports: https://github.com/daattali/shinyjs/issues
 Depends:
     R (>= 3.1.0)
