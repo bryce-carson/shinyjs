@@ -984,17 +984,8 @@ shinyjs = function() {
         var type = resettable.attr('data-shinyjs-resettable-type');
         var value = resettable.attr('data-shinyjs-resettable-value');
         var id = resettable.attr('data-shinyjs-resettable-id');
-        if (id !== undefined) {
-          // file inputs need to be reset manually since shiny doesn't have an
-          // update function for them
-          if (type == "File") {
-            _jqid(id).val('');
-            _jqid(id + "_progress").css("visibility", "hidden");
-            _jqid(id + "_progress").find(".progress-bar").css("width", "0");
-            _jqid(id).closest(".input-group").find("input[type='text']").val('');
-          } else {
-            messages[id] = { 'type' : type, 'value' : value };
-          }
+        if (id !== undefined && type != "File") {
+          messages[id] = { 'type' : type, 'value' : value };
         }
       }
 
